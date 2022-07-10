@@ -17,4 +17,5 @@
   - Visual Studio Community 2017 15.9.27
 
 - external library
-  - vld
+  - [vld]( https://kinddragon.github.io/vld/ )
+  - [r2_console_menu]( https://github.com/R2Road/r2_console_menu )
