@@ -30,6 +30,14 @@ int main()
 	director.Setup( RootMenu::Create( director ) );
 
 	//
+	// Environment : ScrollBar | Maximize Button | Frame Lock | QuickEdit
+	//
+	r2cm::WindowUtility::ScrollBarVisible( false );
+	r2cm::WindowUtility::MaximizeButtonEnable( false );
+	r2cm::WindowUtility::ResizingByDraggingEnable( false );
+	r2cm::WindowUtility::QuickEditEnable( false );
+
+	//
 	// Process
 	//
 	director.Run();
