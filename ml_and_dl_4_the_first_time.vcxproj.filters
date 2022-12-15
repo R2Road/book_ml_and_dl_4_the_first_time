@@ -9,10 +9,13 @@
     <ClCompile Include="external\r2cm\r2cm_Director.cpp">
       <Filter>external\r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="external\r2cm\r2cm_Inspector.cpp">
+    <ClCompile Include="external\r2cm\r2cm_Menu.cpp">
       <Filter>external\r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="external\r2cm\r2cm_Menu.cpp">
+    <ClCompile Include="external\r2cm\r2cm_PrintBinary.cpp">
+      <Filter>external\r2cm</Filter>
+    </ClCompile>
+    <ClCompile Include="external\r2cm\r2cm_PrintFile.cpp">
       <Filter>external\r2cm</Filter>
     </ClCompile>
     <ClCompile Include="external\r2cm\r2cm_StopWatch.cpp">
@@ -26,6 +29,9 @@
     <ClInclude Include="src\RootMenu.h" />
     <ClInclude Include="src\practice\item\empty_test.h">
       <Filter>practice\item</Filter>
+    </ClInclude>
+    <ClInclude Include="external\r2cm\r2cm_ColorModifier.h">
+      <Filter>external\r2cm</Filter>
     </ClInclude>
     <ClInclude Include="external\r2cm\r2cm_Director.h">
       <Filter>external\r2cm</Filter>
@@ -42,7 +48,10 @@
     <ClInclude Include="external\r2cm\r2cm_ostream.h">
       <Filter>external\r2cm</Filter>
     </ClInclude>
-    <ClInclude Include="external\r2cm\r2cm_Singleton.h">
+    <ClInclude Include="external\r2cm\r2cm_PrintBinary.h">
+      <Filter>external\r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="external\r2cm\r2cm_PrintFile.h">
       <Filter>external\r2cm</Filter>
     </ClInclude>
     <ClInclude Include="external\r2cm\r2cm_StopWatch.h">
