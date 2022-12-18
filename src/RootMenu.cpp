@@ -24,7 +24,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddItem( '1', empty_test::Basic() );
+		ret->AddItem( '1', practice_1::_1() );
 
 
 

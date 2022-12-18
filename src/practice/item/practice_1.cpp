@@ -4,16 +4,16 @@
 
 #include "r2cm/r2cm_ostream.h"
 
-namespace empty_test
+namespace practice_1
 {
-	r2cm::iItem::TitleFunctionT Basic::GetTitleFunction() const
+	r2cm::iItem::TitleFunctionT _1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "Empty Test";
+			return "practice : 1 - 1";
 		};
 	}
-	r2cm::iItem::DoFunctionT Basic::GetDoFunction() const
+	r2cm::iItem::DoFunctionT _1::GetDoFunction() const
 	{
 		return []()->r2cm::eItemLeaveAction
 		{

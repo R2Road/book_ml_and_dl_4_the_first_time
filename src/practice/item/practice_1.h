@@ -2,9 +2,9 @@
 
 #include "r2cm/r2cm_iItem.h"
 
-namespace empty_test
+namespace practice_1
 {
-	class Basic : public r2cm::iItem
+	class _1 : public r2cm::iItem
 	{
 	public:
 		TitleFunctionT GetTitleFunction() const override;
