@@ -48,8 +48,19 @@ namespace practice_1
 
 					if( sscanf_s( linebuffer, "%lf", &result ) )
 					{
+						//
+						//
+						//
 						sum_normal += result;
+
+						//
+						//
+						//
 						sum_pow2 += ( result * result );
+
+						//
+						//
+						//
 						printf(
 							"sum normal : %lf"
 							"   "
