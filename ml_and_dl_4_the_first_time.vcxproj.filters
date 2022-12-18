@@ -3,9 +3,6 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
-    <ClCompile Include="src\practice\item\empty_test.cpp">
-      <Filter>practice\item</Filter>
-    </ClCompile>
     <ClCompile Include="external\r2cm\r2cm_Director.cpp">
       <Filter>external\r2cm</Filter>
     </ClCompile>
@@ -24,12 +21,12 @@
     <ClCompile Include="external\r2cm\r2cm_WindowUtility.cpp">
       <Filter>external\r2cm</Filter>
     </ClCompile>
+    <ClCompile Include="src\practice\item\practice_1.cpp">
+      <Filter>practice\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
-    <ClInclude Include="src\practice\item\empty_test.h">
-      <Filter>practice\item</Filter>
-    </ClInclude>
     <ClInclude Include="external\r2cm\r2cm_ColorModifier.h">
       <Filter>external\r2cm</Filter>
     </ClInclude>
@@ -62,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="external\r2cm\r2cm_WindowUtility.h">
       <Filter>external\r2cm</Filter>
+    </ClInclude>
+    <ClInclude Include="src\practice\item\practice_1.h">
+      <Filter>practice\item</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

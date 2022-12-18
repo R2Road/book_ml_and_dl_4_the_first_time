@@ -6,7 +6,7 @@
 #include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_VersionInfo.h"
 
-#include "practice/item/empty_test.h"
+#include "practice/item/practice_1.h"
 
 const char* RootMenu::GetTitle()
 {
