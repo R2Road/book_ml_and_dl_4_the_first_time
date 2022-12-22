@@ -1,10 +1,10 @@
-#include "practice_1.h"
+#include "practice_01.h"
 
 #include <conio.h>
 
 #include "r2cm/r2cm_ostream.h"
 
-namespace practice_1
+namespace practice_01
 {
 	r2cm::iItem::TitleFunctionT _1::GetTitleFunction() const
 	{

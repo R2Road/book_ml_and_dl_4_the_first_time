@@ -6,7 +6,7 @@
 #include "r2cm/r2cm_ostream.h"
 #include "r2cm/r2cm_VersionInfo.h"
 
-#include "practice/item/practice_1.h"
+#include "practice/item/practice_01.h"
 
 const char* RootMenu::GetTitle()
 {
@@ -25,7 +25,7 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 	) );
 
 	{
-		ret->AddItem( '1', practice_1::_1() );
+		ret->AddItem( '1', practice_01::_1() );
 
 
 

@@ -21,7 +21,7 @@
     <ClCompile Include="external\r2cm\r2cm_WindowUtility.cpp">
       <Filter>external\r2cm</Filter>
     </ClCompile>
-    <ClCompile Include="src\practice\item\practice_1.cpp">
+    <ClCompile Include="src\practice\item\practice_01.cpp">
       <Filter>practice\item</Filter>
     </ClCompile>
   </ItemGroup>
@@ -60,7 +60,7 @@
     <ClInclude Include="external\r2cm\r2cm_WindowUtility.h">
       <Filter>external\r2cm</Filter>
     </ClInclude>
-    <ClInclude Include="src\practice\item\practice_1.h">
+    <ClInclude Include="src\practice\item\practice_01.h">
       <Filter>practice\item</Filter>
     </ClInclude>
   </ItemGroup>

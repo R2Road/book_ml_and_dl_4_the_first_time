@@ -26,7 +26,7 @@
     <ClCompile Include="external\r2cm\r2cm_StopWatch.cpp" />
     <ClCompile Include="external\r2cm\r2cm_WindowUtility.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\practice\item\practice_1.cpp" />
+    <ClCompile Include="src\practice\item\practice_01.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -41,7 +41,7 @@
     <ClInclude Include="external\r2cm\r2cm_StopWatch.h" />
     <ClInclude Include="external\r2cm\r2cm_VersionInfo.h" />
     <ClInclude Include="external\r2cm\r2cm_WindowUtility.h" />
-    <ClInclude Include="src\practice\item\practice_1.h" />
+    <ClInclude Include="src\practice\item\practice_01.h" />
     <ClInclude Include="src\RootMenu.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
