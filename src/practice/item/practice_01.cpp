@@ -2,6 +2,7 @@
 
 #include <conio.h>
 
+#include "r2cm/r2cm_Inspector.h"
 #include "r2cm/r2cm_ostream.h"
 
 namespace practice_01
@@ -17,6 +18,11 @@ namespace practice_01
 	{
 		return []()->r2cm::eItemLeaveAction
 		{
+			std::cout << r2cm::split;
+
+			OUTPUT_NOTE( "[number] + [enter] Calculate" );
+			OUTPUT_NOTE( "[q]      + [enter] End" );
+
 			std::cout << r2cm::split;
 
 			{
