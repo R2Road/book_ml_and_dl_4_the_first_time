@@ -2,8 +2,8 @@
 	#include "vld/include/vld.h"
 #endif
 
-#include "r2cm/r2cm_Director.h"
-#include "r2cm/r2cm_WindowUtility.h"
+#include "r2tm/r2tm_Director.h"
+#include "r2tm/r2tm_WindowsUtility.h"
 #include "RootMenu.h"
 
 int main()
@@ -11,31 +11,31 @@ int main()
 	//
 	// Environment : Title
 	//
-	r2cm::WindowUtility::ChangeTitle( "ml_and_dl_4_the_first_time" );
+	r2tm::WindowsUtility::ChangeTitle( "ml_and_dl_4_the_first_time" );
 
 	//
 	// Environment : Size
 	//
-	r2cm::WindowUtility::Resize( 960, 960 );
+	r2tm::WindowsUtility::Resize( 960, 960 );
 
 	//
 	// Environment : Position
 	//
-	r2cm::WindowUtility::Move( 0, 0 );
+	r2tm::WindowsUtility::Move( 0, 0 );
 
 	//
 	// Setup
 	//
-	r2cm::Director director;
-	director.Setup( RootMenu::Create( director ) );
+	r2tm::Director director;
+	director.Setup( RootMenu() );
 
 	//
 	// Environment : ScrollBar | Maximize Button | Frame Lock | QuickEdit
 	//
-	r2cm::WindowUtility::ScrollBarVisible( false );
-	r2cm::WindowUtility::MaximizeButtonEnable( false );
-	r2cm::WindowUtility::ResizingByDraggingEnable( false );
-	r2cm::WindowUtility::QuickEditEnable( false );
+	r2tm::WindowsUtility::ScrollBarVisible( false );
+	r2tm::WindowsUtility::MaximizeButtonEnable( false );
+	r2tm::WindowsUtility::ResizingByDraggingEnable( false );
+	r2tm::WindowsUtility::QuickEditEnable( false );
 
 	//
 	// Process

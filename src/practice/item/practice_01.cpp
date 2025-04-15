@@ -2,28 +2,28 @@
 
 #include <conio.h>
 
-#include "r2cm/r2cm_Inspector.h"
-#include "r2cm/r2cm_ostream.h"
+#include "r2tm/r2tm_Inspector.h"
+#include "r2tm/r2tm_ostream.h"
 
 namespace practice_01
 {
-	r2cm::iItem::TitleFunctionT _1::GetTitleFunction() const
+	r2tm::TitleFunctionT _1::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "practice : 1 - 1";
 		};
 	}
-	r2cm::iItem::DoFunctionT _1::GetDoFunction() const
+	r2tm::DoFunctionT _1::GetDoFunction() const
 	{
-		return []()->r2cm::eItemLeaveAction
+		return []()->r2tm::eDoLeaveAction
 		{
-			std::cout << r2cm::split;
+			std::cout << r2tm::split;
 
-			OUTPUT_NOTE( "[number] + [enter] Calculate" );
-			OUTPUT_NOTE( "[q]      + [enter] End" );
+			OUTPUT_SUBJECT( "[number] + [enter] Calculate" );
+			OUTPUT_SUBJECT( "[q]      + [enter] End" );
 
-			std::cout << r2cm::split;
+			std::cout << r2tm::split;
 
 			{
 				const int BUFFER_SIZE = 256;
@@ -88,9 +88,9 @@ namespace practice_01
 				}
 			}
 
-			std::cout << r2cm::split;
+			std::cout << r2tm::split;
 
-			return r2cm::eItemLeaveAction::None;
+			return r2tm::eDoLeaveAction::None;
 		};
 	}
 }

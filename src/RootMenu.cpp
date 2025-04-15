@@ -2,30 +2,39 @@
 
 #include <string>
 
-#include "r2cm/r2cm_Director.h"
-#include "r2cm/r2cm_ostream.h"
-#include "r2cm/r2cm_VersionInfo.h"
+#include "r2tm/r2tm_Director.h"
+#include "r2tm/r2tm_ostream.h"
+#include "r2tm/r2tm_VersionInfo.h"
 
 #include "practice/item/practice_01.h"
 
-const char* RootMenu::GetTitle()
+r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
-	static const std::string ret =
-		std::string( "Root Menu" )
-		+ " : " + "<" + "C++17" + ">"
-		+ ", " + "<" + "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
-		+ ", <" + r2cm::VersionInfo.String4Version + ">";
-	return ret.c_str();
+	return []()->const char*
+	{
+		static const std::string ret =
+			std::string()
+
+			+ "Root Menu"
+			" : "	"<"   "C++17" + ">"
+			", "	"<"   "MS C/C++ : " + std::to_string( _MSC_VER ) + ">"
+			", "	"<" + r2tm::VersionInfo.String4Version + ">"
+			;
+		return ret.c_str();
+	};
 }
 
-r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
+r2tm::DescriptionFunctionT RootMenu::GetDescriptionFunction() const
 {
-	r2cm::MenuUp ret( new ( std::nothrow ) r2cm::Menu(
-		director
-		, GetTitle()
-		, "Ã¥ : Ã³À½ ¸¸³ª´Â ¸Ó½Å·¯´×°ú µö·¯´×"
-	) );
+	return []()->const char*
+	{
+		return "    " "Ã¥ : Ã³À½ ¸¸³ª´Â ¸Ó½Å·¯´×°ú µö·¯´×";
+	};
+}
 
+r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
+{
+	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', practice_01::_1() );
 
@@ -35,12 +44,6 @@ r2cm::MenuUp RootMenu::Create( r2cm::Director& director )
 
 
 
-		ret->AddItem(
-			27
-			, []()->const char* { return "Exit"; }
-			, []()->r2cm::eItemLeaveAction { return r2cm::eItemLeaveAction::Exit; }
-		);
-	}
-
-	return ret;
+		ret->AddExit( 27 );
+	};
 }
