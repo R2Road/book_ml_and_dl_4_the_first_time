@@ -1,11 +1,11 @@
-#include "practice_01.h"
+#include "chapter_01.hpp"
 
 #include <conio.h>
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
-namespace practice_01
+namespace chapter_01
 {
 	r2tm::TitleFunctionT _1::GetTitleFunction() const
 	{

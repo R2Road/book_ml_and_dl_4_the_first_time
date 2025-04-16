@@ -6,7 +6,7 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "practice/item/practice_01.h"
+#include "practice/item/chapter_01.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -36,7 +36,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddItem( '1', practice_01::_1() );
+		ret->AddItem( '1', chapter_01::_1() );
 
 
 

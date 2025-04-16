@@ -3,7 +3,7 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
-    <ClCompile Include="src\practice\item\practice_01.cpp">
+    <ClCompile Include="src\practice\item\chapter_01.cpp">
       <Filter>practice\item</Filter>
     </ClCompile>
     <ClCompile Include="external\r2tm\r2tm_CacheCleaner.cpp">
@@ -30,7 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
-    <ClInclude Include="src\practice\item\practice_01.h">
+    <ClInclude Include="src\practice\item\chapter_01.hpp">
       <Filter>practice\item</Filter>
     </ClInclude>
     <ClInclude Include="external\r2tm\r2tm_CacheCleaner.h">
