@@ -18,16 +18,18 @@ namespace chapter_01
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
-			std::cout << r2tm::split;
+			LS();
 
 			OUTPUT_NOTE( "합, 제곱 합 구하기" );
 			OUTPUT_NOTE( "표준 입력에서 실수를 읽어" );
 			OUTPUT_NOTE( "합과 제곱 합을 차례대로 출력 합니다." );
 
+			LF();
+
 			OUTPUT_SUBJECT( "[number] + [enter] Calculate" );
 			OUTPUT_SUBJECT( "[q]      + [enter] End" );
 
-			std::cout << r2tm::split;
+			LS();
 
 			{
 				const int BUFFER_SIZE = 256;
@@ -92,7 +94,7 @@ namespace chapter_01
 				}
 			}
 
-			std::cout << r2tm::split;
+			LS();
 
 			return r2tm::eDoLeaveAction::None;
 		};
