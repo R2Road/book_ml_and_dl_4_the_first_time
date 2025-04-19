@@ -27,6 +27,9 @@
     <ClCompile Include="external\r2tm\r2tm_WindowsUtility.cpp">
       <Filter>external\r2tm</Filter>
     </ClCompile>
+    <ClCompile Include="src\practice\item\chapter_02.cpp">
+      <Filter>practice\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -75,6 +78,9 @@
     <ClInclude Include="external\r2tm\r2tm_WindowsUtility.h">
       <Filter>external\r2tm</Filter>
     </ClInclude>
+    <ClInclude Include="src\practice\item\chapter_02.hpp">
+      <Filter>practice\item</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="practice">
@@ -92,5 +98,13 @@
     <Filter Include="external\r2tm">
       <UniqueIdentifier>{fbb86807-2446-4275-b7e7-dd7acc80e1b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{f8df0af7-85c9-408a-a1dc-dda64e4b3e58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resource\chapter_02_01.txt">
+      <Filter>resource</Filter>
+    </Text>
   </ItemGroup>
 </Project>

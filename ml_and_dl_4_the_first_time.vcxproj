@@ -28,6 +28,7 @@
     <ClCompile Include="external\r2tm\r2tm_WindowsUtility.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\practice\item\chapter_01.cpp" />
+    <ClCompile Include="src\practice\item\chapter_02.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +47,11 @@
     <ClInclude Include="external\r2tm\r2tm_VersionInfo.h" />
     <ClInclude Include="external\r2tm\r2tm_WindowsUtility.h" />
     <ClInclude Include="src\practice\item\chapter_01.hpp" />
+    <ClInclude Include="src\practice\item\chapter_02.hpp" />
     <ClInclude Include="src\RootMenu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resource\chapter_02_01.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -138,7 +143,8 @@
     </CustomBuildStep>
     <PostBuildEvent>
       <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
-xcopy "$(ProjectDir)external\vld\bin\Win32\*.*" "$(OutDir)" /D /E /I /F /Y</Command>
+xcopy "$(ProjectDir)external\vld\bin\Win32\*.*" "$(OutDir)" /D /E /I /F /Y
+xcopy "$(ProjectDir)resources" "$(OutDir)resources" /D /E /I /F /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -161,7 +167,8 @@ xcopy "$(ProjectDir)external\vld\bin\Win32\*.*" "$(OutDir)" /D /E /I /F /Y</Comm
     </Link>
     <PostBuildEvent>
       <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
-xcopy "$(ProjectDir)external\vld\bin\Win64\*.*" "$(OutDir)" /D /E /I /F /Y</Command>
+xcopy "$(ProjectDir)external\vld\bin\Win64\*.*" "$(OutDir)" /D /E /I /F /Y
+xcopy "$(ProjectDir)resources" "$(OutDir)resources" /D /E /I /F /Y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
