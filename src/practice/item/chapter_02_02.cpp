@@ -59,6 +59,10 @@ namespace chapter_02_02
 	{
 		int rnd = 0;
 
+		//
+		// 이 조건문이 존재하는 이유는
+		// 허용할 경우 rnd 값이 RAND_MAX 인 경우 3이 나오기 때문이다.
+		//
 		while( ( rnd = rand() ) == RAND_MAX );
 
 		//
