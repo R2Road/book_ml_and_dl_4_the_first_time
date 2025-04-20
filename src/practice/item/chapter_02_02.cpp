@@ -1,4 +1,4 @@
-#include "chapter_02.hpp"
+#include "chapter_02_02.hpp"
 
 #include <conio.h>
 #include <cstdlib>
@@ -6,7 +6,7 @@
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
-namespace chapter_02
+namespace chapter_02_02
 {
 	enum eResult{
 		NG = 0,
@@ -122,14 +122,14 @@ namespace chapter_02
 
 
 
-	r2tm::TitleFunctionT _2::GetTitleFunction() const
+	r2tm::TitleFunctionT Example::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
 			return "practice : 2 - 2";
 		};
 	}
-	r2tm::DoFunctionT _2::GetDoFunction() const
+	r2tm::DoFunctionT Example::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

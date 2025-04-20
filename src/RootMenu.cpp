@@ -7,7 +7,7 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "practice/item/chapter_01.hpp"
-#include "practice/item/chapter_02.hpp"
+#include "practice/item/chapter_02_02.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -38,7 +38,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', chapter_01::_1() );
-		ret->AddItem( '2', chapter_02::_2() );
+		ret->AddItem( '2', chapter_02_02::Example() );
 
 
 
