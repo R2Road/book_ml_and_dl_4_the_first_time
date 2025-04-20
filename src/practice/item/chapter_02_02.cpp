@@ -8,28 +8,24 @@
 
 namespace chapter_02_02
 {
-	enum eResult{
-		NG = 0,
-		OK = 1,
-	};
-
 	const int SETSIZE = 100;	// 학습 데이터 집합 크기
 	const int CNO = 10;			// 학습 데이터 자릿수( 10개 회사 )
 	const int GENMAX = 10000;	// 해답 후보 생성 횟수
-	const int SEED = 32767;		// 난수 시드
+	const int RANDOM_SEED = 32767;		// 난수 시드
 
 	bool read_data( int data[SETSIZE][CNO], int teacher[SETSIZE] )
 	{
-		data;
-		teacher;
-
 		FILE* fp = nullptr;
 		if( 0 != fopen_s( &fp, "resources/chapter_02_02.txt", "rb" ) )
+		{
 			return false;
+		}
 
 		//
 		// # Data Format
 		// "x x x x x x x x x x    result"
+		// x : 0, 1
+		// result : 0, 1, 2
 		//
 		for( int i = 0; SETSIZE > i; ++i )
 		{
@@ -104,7 +100,7 @@ namespace chapter_02_02
 			// 점수 계산
 			//
 
-			// 모두 일치, 
+			// 모두 일치 +
 			if( ( point == CNO ) && ( teacher[i] == 1 ) )
 			{
 				++score;
@@ -148,6 +144,8 @@ namespace chapter_02_02
 			OUTPUT_COMMENT( "X 회사에 영향을 주는 10개사의 주가 상승/하락 정보 : C" );
 			OUTPUT_COMMENT( "X 회사의 주가 상승/하락 정보 : X" );
 			OUTPUT_COMMENT( "c c c c c c c c c c     x" );
+			OUTPUT_COMMENT( "c의 값 : 상승 1, 하락 0 " );
+			OUTPUT_COMMENT( "x의 값 : 상승 1, 하락 0 " );
 
 			LF();
 
@@ -169,7 +167,7 @@ namespace chapter_02_02
 			//
 			// 난수 초기화
 			//
-			PROCESS_MAIN( srand( SEED ) );
+			PROCESS_MAIN( srand( RANDOM_SEED ) );
 
 			LS();
 
