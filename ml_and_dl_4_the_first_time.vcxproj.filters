@@ -30,6 +30,9 @@
     <ClCompile Include="src\practice\item\chapter_02_02.cpp">
       <Filter>practice\item</Filter>
     </ClCompile>
+    <ClCompile Include="src\practice\item\chapter_02_03.cpp">
+      <Filter>practice\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -79,6 +82,9 @@
       <Filter>external\r2tm</Filter>
     </ClInclude>
     <ClInclude Include="src\practice\item\chapter_02_02.hpp">
+      <Filter>practice\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\practice\item\chapter_02_03.hpp">
       <Filter>practice\item</Filter>
     </ClInclude>
   </ItemGroup>
