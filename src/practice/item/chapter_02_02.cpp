@@ -6,6 +6,8 @@
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
+#include "utility4example.hpp"
+
 namespace chapter_02_02
 {
 	const int SETSIZE = 100;	// 학습 데이터 집합 크기
@@ -52,27 +54,6 @@ namespace chapter_02_02
 
 			printf( "     %d\n", teacher[i] );
 		}
-	}
-
-	// 난수 생성 : 0, 1, 2
-	int rand012()
-	{
-		int rnd = 0;
-
-		//
-		// 이 조건문이 존재하는 이유는
-		// 허용할 경우 rnd 값이 RAND_MAX 인 경우 3이 나오기 때문이다.
-		//
-		while( ( rnd = rand() ) == RAND_MAX );
-
-		//
-		// 아래의 신비로운 로직이 궁금하면 주석을 풀고 확인 해라.
-		// 
-		//OUTPUT_VALUE( rnd );
-		//OUTPUT_VALUE( RAND_MAX * 3 );
-		//OUTPUT_VALUE( ( double )rnd / RAND_MAX * 3 );
-
-		return (int)( (double)rnd / RAND_MAX * 3 );
 	}
 
 	int calcscore( int data[SETSIZE][CNO], int teacher[SETSIZE], int answer[CNO] )
@@ -199,7 +180,7 @@ namespace chapter_02_02
 					// 해답 후보 생성
 					for( int j = 0; CNO > j; ++j )
 					{
-						answer[j] = rand012();
+						answer[j] = u4e::randomi( 0, 2 );
 					}
 
 					// 해답 후보 검사

@@ -7,6 +7,8 @@
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
+#include "utility4example.hpp"
+
 namespace chapter_02_03
 {
 	const int GENMAX = 1000;
@@ -15,35 +17,6 @@ namespace chapter_02_03
 	const float GAMMA = 0.9f;		// 할인율
 	const float EPSILON = 0.3f;		// 행동 선택 무작위율
 	const int RANDOM_SEED = 32767;
-
-
-
-	int randomi( const int min_value, const int max_value )
-	{
-		int rnd = 0;
-
-		while( ( rnd = rand() ) == RAND_MAX );
-
-		return min_value + ( int )( ( double )rnd / RAND_MAX * ( max_value - min_value + 1 ) );
-	}
-	void test_randomi()
-	{
-		for( int i = 0; 100 > i; ++i )
-		{
-			printf( "%d\n", randomi( 1, 5 ) );
-		}
-	}
-	float randomf( const float min_value, const float max_value )
-	{
-		return min_value + ( ( float )rand() / RAND_MAX * ( max_value - min_value ) );
-	}
-	void test_randomf()
-	{
-		for( int i = 0; 100 > i; ++i )
-		{
-			printf( "%f\n", randomf( 1, 5 ) );
-		}
-	}
 
 
 
@@ -108,10 +81,10 @@ namespace chapter_02_03
 		//
 
 		// 무작위 행동
-		if( EPSILON > randomf( 0, 1 ) )
+		if( EPSILON > u4e::randomf( 0, 1 ) )
 		{
 			// 왼쪽
-			if( randomi( 0, 1 ) == 0 )
+			if( u4e::randomi( 0, 1 ) == 0 )
 			{
 				s = 2 * olds + 1;
 			}
@@ -211,7 +184,7 @@ namespace chapter_02_03
 				//
 				for( int i = 0; NODENO > i; ++i )
 				{
-					qvalue[i] = randomi( 0, 100 );
+					qvalue[i] = u4e::randomi( 0, 100 );
 				}
 				print_q_value( qvalue );
 
