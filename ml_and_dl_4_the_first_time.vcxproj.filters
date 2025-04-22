@@ -36,6 +36,9 @@
     <ClCompile Include="src\practice\item\utility4example.cpp">
       <Filter>practice\item</Filter>
     </ClCompile>
+    <ClCompile Include="src\practice\item\chapter_03_01.cpp">
+      <Filter>practice\item</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -91,6 +94,9 @@
       <Filter>practice\item</Filter>
     </ClInclude>
     <ClInclude Include="src\practice\item\utility4example.hpp">
+      <Filter>practice\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\practice\item\chapter_03_01.hpp">
       <Filter>practice\item</Filter>
     </ClInclude>
   </ItemGroup>
