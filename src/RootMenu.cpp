@@ -41,11 +41,12 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 	return []( r2tm::MenuProcessor* ret )
 	{
 		ret->AddItem( '1', chapter_01::_1() );
-		ret->AddItem( '2', chapter_02_02::Example() );
-		ret->AddItem( '3', chapter_02_03::Example() );
-		ret->AddItem( '4', chapter_03_01::Example() );
-		ret->AddItem( '5', chapter_03_02::Crossing() );
-		ret->AddItem( '6', chapter_03_02::Example() );
+		ret->AddItem( '2', chapter_02_02::LoadData() );
+		ret->AddItem( '3', chapter_02_02::Example() );
+		ret->AddItem( '4', chapter_02_03::Example() );
+		ret->AddItem( '5', chapter_03_01::Example() );
+		ret->AddItem( '6', chapter_03_02::Crossing() );
+		ret->AddItem( '7', chapter_03_02::Example() );
 
 
 

@@ -47,6 +47,8 @@ namespace chapter_02_02
 	{
 		for( int i = 0; SETSIZE > i; ++i )
 		{
+			printf( "%3d :   ", i );
+
 			for( int j = 0; CNO > j; ++j )
 			{
 				printf( "%d ", data[i][j] );
@@ -102,12 +104,47 @@ namespace chapter_02_02
 
 
 
+	r2tm::TitleFunctionT LoadData::GetTitleFunction() const
+	{
+		return []()->const char*
+		{
+			return "practice : 2 - 2 : Load Data";
+		};
+	}
+	r2tm::DoFunctionT LoadData::GetDoFunction() const
+	{
+		return []()->r2tm::eDoLeaveAction
+		{
+			std::cout << r2tm::split;
+
+			OUTPUT_COMMENT( "학습 데이터 읽기" );
+
+			LS();
+
+			DECLARATION_MAIN( int data[SETSIZE][CNO] );		// 학습 데이터 집합
+			DECLARATION_MAIN( int teacher[SETSIZE] );		// 교사 데이터
+
+			LS();
+
+			//
+			// 학습 데이터 집합을 읽어들임
+			//
+			EXPECT_TRUE( read_data( data, teacher ) );
+			PROCESS_MAIN( output_data( data, teacher ) );
+
+			LS();
+
+			return r2tm::eDoLeaveAction::Pause;
+		};
+	}
+
+
 
 	r2tm::TitleFunctionT Example::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "practice : 2 - 2";
+			return "practice : 2 - 2 : Do";
 		};
 	}
 	r2tm::DoFunctionT Example::GetDoFunction() const
