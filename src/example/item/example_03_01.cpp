@@ -42,8 +42,7 @@ namespace example_03_01
 	}
 
 	void walk(
-		  const int cost[2][STEP]
-		, double pheromone[2][STEP]
+		  double pheromone[2][STEP]
 		, int mstep[NOA][STEP]
 	)
 	{
@@ -160,7 +159,7 @@ namespace example_03_01
 					print_pheromone( pheromone );
 
 					// 개미 이동
-					walk( cost, pheromone, mstep );
+					walk( pheromone, mstep );
 
 					// 페로몬 갱신
 					update_pheromone( cost, pheromone, mstep );
