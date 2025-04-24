@@ -365,7 +365,6 @@ namespace example_03_02
 
 			int pool[POOLSIZE][N];			// 염색체 집단
 			int ngpool[POOLSIZE * 2][N];	// 다음 세대 염색체 집단
-			int generation = 0;					// 현재 세대 수
 
 			// 난수 초기화
 			PROCESS_MAIN( srand( RANDOM_SEED ) );
