@@ -3,9 +3,6 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
-    <ClCompile Include="src\practice\item\chapter_01.cpp">
-      <Filter>practice\item</Filter>
-    </ClCompile>
     <ClCompile Include="external\r2tm\r2tm_CacheCleaner.cpp">
       <Filter>external\r2tm</Filter>
     </ClCompile>
@@ -27,27 +24,27 @@
     <ClCompile Include="external\r2tm\r2tm_WindowsUtility.cpp">
       <Filter>external\r2tm</Filter>
     </ClCompile>
-    <ClCompile Include="src\practice\item\chapter_02_02.cpp">
-      <Filter>practice\item</Filter>
+    <ClCompile Include="src\example\item\example_02_02.cpp">
+      <Filter>example\item</Filter>
     </ClCompile>
-    <ClCompile Include="src\practice\item\chapter_02_03.cpp">
-      <Filter>practice\item</Filter>
+    <ClCompile Include="src\example\item\example_02_03.cpp">
+      <Filter>example\item</Filter>
     </ClCompile>
-    <ClCompile Include="src\practice\item\utility4example.cpp">
-      <Filter>practice\item</Filter>
+    <ClCompile Include="src\example\item\example_03_01.cpp">
+      <Filter>example\item</Filter>
     </ClCompile>
-    <ClCompile Include="src\practice\item\chapter_03_01.cpp">
-      <Filter>practice\item</Filter>
+    <ClCompile Include="src\example\item\example_03_02.cpp">
+      <Filter>example\item</Filter>
     </ClCompile>
-    <ClCompile Include="src\practice\item\chapter_03_02.cpp">
-      <Filter>practice\item</Filter>
+    <ClCompile Include="src\example\item\example_01_01.cpp">
+      <Filter>example\item</Filter>
+    </ClCompile>
+    <ClCompile Include="src\example\item\utility4example.cpp">
+      <Filter>example\item</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
-    <ClInclude Include="src\practice\item\chapter_01.hpp">
-      <Filter>practice\item</Filter>
-    </ClInclude>
     <ClInclude Include="external\r2tm\r2tm_CacheCleaner.h">
       <Filter>external\r2tm</Filter>
     </ClInclude>
@@ -90,32 +87,26 @@
     <ClInclude Include="external\r2tm\r2tm_WindowsUtility.h">
       <Filter>external\r2tm</Filter>
     </ClInclude>
-    <ClInclude Include="src\practice\item\chapter_02_02.hpp">
-      <Filter>practice\item</Filter>
+    <ClInclude Include="src\example\item\example_02_02.hpp">
+      <Filter>example\item</Filter>
     </ClInclude>
-    <ClInclude Include="src\practice\item\chapter_02_03.hpp">
-      <Filter>practice\item</Filter>
+    <ClInclude Include="src\example\item\example_02_03.hpp">
+      <Filter>example\item</Filter>
     </ClInclude>
-    <ClInclude Include="src\practice\item\utility4example.hpp">
-      <Filter>practice\item</Filter>
+    <ClInclude Include="src\example\item\example_03_01.hpp">
+      <Filter>example\item</Filter>
     </ClInclude>
-    <ClInclude Include="src\practice\item\chapter_03_01.hpp">
-      <Filter>practice\item</Filter>
+    <ClInclude Include="src\example\item\example_03_02.hpp">
+      <Filter>example\item</Filter>
     </ClInclude>
-    <ClInclude Include="src\practice\item\chapter_03_02.hpp">
-      <Filter>practice\item</Filter>
+    <ClInclude Include="src\example\item\example_01_01.hpp">
+      <Filter>example\item</Filter>
+    </ClInclude>
+    <ClInclude Include="src\example\item\utility4example.hpp">
+      <Filter>example\item</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="practice">
-      <UniqueIdentifier>{59b55341-9572-4afd-a307-2e032deb3623}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="practice\item">
-      <UniqueIdentifier>{675da4f1-e1bb-45c2-8fe0-f87c4dd402d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="practice\menu">
-      <UniqueIdentifier>{923382b1-5880-48ea-bc82-680641c53698}</UniqueIdentifier>
-    </Filter>
     <Filter Include="external">
       <UniqueIdentifier>{5776f717-9bf2-4d54-ad8f-2fe5437b2f19}</UniqueIdentifier>
     </Filter>
@@ -124,6 +115,15 @@
     </Filter>
     <Filter Include="resource">
       <UniqueIdentifier>{f8df0af7-85c9-408a-a1dc-dda64e4b3e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example">
+      <UniqueIdentifier>{59b55341-9572-4afd-a307-2e032deb3623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\item">
+      <UniqueIdentifier>{675da4f1-e1bb-45c2-8fe0-f87c4dd402d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="example\menu">
+      <UniqueIdentifier>{923382b1-5880-48ea-bc82-680641c53698}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

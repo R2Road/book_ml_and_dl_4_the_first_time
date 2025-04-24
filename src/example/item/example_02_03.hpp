@@ -2,9 +2,9 @@
 
 #include "r2tm/r2tm_iItem.h"
 
-namespace chapter_01
+namespace example_02_03
 {
-	class _1 : public r2tm::iItem
+	class Do : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

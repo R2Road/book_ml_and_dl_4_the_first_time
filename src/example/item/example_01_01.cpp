@@ -1,20 +1,20 @@
-#include "chapter_01.hpp"
+#include "example_01_01.hpp"
 
 #include <conio.h>
 
 #include "r2tm/r2tm_Inspector.h"
 #include "r2tm/r2tm_ostream.h"
 
-namespace chapter_01
+namespace example_01_01
 {
-	r2tm::TitleFunctionT _1::GetTitleFunction() const
+	r2tm::TitleFunctionT Do::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "practice : 1 - 1";
+			return "example : 1 - 1 : Do";
 		};
 	}
-	r2tm::DoFunctionT _1::GetDoFunction() const
+	r2tm::DoFunctionT Do::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

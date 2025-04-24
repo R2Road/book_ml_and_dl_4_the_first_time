@@ -1,4 +1,4 @@
-#include "chapter_03_02.hpp"
+#include "example_03_02.hpp"
 
 #include <cstdio>
 #include <cstdlib>
@@ -8,7 +8,7 @@
 #include "r2tm/r2tm_ostream.h"
 #include "utility4example.hpp"
 
-namespace chapter_03_02
+namespace example_03_02
 {
 	const int MAXVALUE = 100;						// 무게와 가치의 최댓값
 	const int N = 30;								// 짐 개수
@@ -287,7 +287,7 @@ namespace chapter_03_02
 	{
 		return []()->const char*
 		{
-			return "practice : 3 - 2 : Crossing";
+			return "example : 3 - 2 : Crossing";
 		};
 	}
 	r2tm::DoFunctionT Crossing::GetDoFunction() const
@@ -345,14 +345,14 @@ namespace chapter_03_02
 
 
 
-	r2tm::TitleFunctionT Example::GetTitleFunction() const
+	r2tm::TitleFunctionT Do::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "practice : 3 - 2";
+			return "example : 3 - 2";
 		};
 	}
-	r2tm::DoFunctionT Example::GetDoFunction() const
+	r2tm::DoFunctionT Do::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

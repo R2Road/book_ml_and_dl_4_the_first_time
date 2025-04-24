@@ -6,11 +6,11 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "practice/item/chapter_01.hpp"
-#include "practice/item/chapter_02_02.hpp"
-#include "practice/item/chapter_02_03.hpp"
-#include "practice/item/chapter_03_01.hpp"
-#include "practice/item/chapter_03_02.hpp"
+#include "example/item/example_01_01.hpp"
+#include "example/item/example_02_02.hpp"
+#include "example/item/example_02_03.hpp"
+#include "example/item/example_03_01.hpp"
+#include "example/item/example_03_02.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -40,13 +40,13 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddItem( '1', chapter_01::_1() );
-		ret->AddItem( '2', chapter_02_02::LoadData() );
-		ret->AddItem( '3', chapter_02_02::Example() );
-		ret->AddItem( '4', chapter_02_03::Example() );
-		ret->AddItem( '5', chapter_03_01::Example() );
-		ret->AddItem( '6', chapter_03_02::Crossing() );
-		ret->AddItem( '7', chapter_03_02::Example() );
+		ret->AddItem( '1', example_01_01::Do() );
+		ret->AddItem( '2', example_02_02::LoadData() );
+		ret->AddItem( '3', example_02_02::Do() );
+		ret->AddItem( '4', example_02_03::Do() );
+		ret->AddItem( '5', example_03_01::Do() );
+		ret->AddItem( '6', example_03_02::Crossing() );
+		ret->AddItem( '7', example_03_02::Do() );
 
 
 

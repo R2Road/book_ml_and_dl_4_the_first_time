@@ -1,4 +1,4 @@
-#include "chapter_02_02.hpp"
+#include "example_02_02.hpp"
 
 #include <conio.h>
 #include <cstdlib>
@@ -8,7 +8,7 @@
 
 #include "utility4example.hpp"
 
-namespace chapter_02_02
+namespace example_02_02
 {
 	const int SETSIZE = 100;	// 학습 데이터 집합 크기
 	const int CNO = 10;			// 학습 데이터 자릿수( 10개 회사 )
@@ -108,7 +108,7 @@ namespace chapter_02_02
 	{
 		return []()->const char*
 		{
-			return "practice : 2 - 2 : Load Data";
+			return "example : 2 - 2 : Load Data";
 		};
 	}
 	r2tm::DoFunctionT LoadData::GetDoFunction() const
@@ -140,14 +140,14 @@ namespace chapter_02_02
 
 
 
-	r2tm::TitleFunctionT Example::GetTitleFunction() const
+	r2tm::TitleFunctionT Do::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "practice : 2 - 2 : Do";
+			return "example : 2 - 2 : Do";
 		};
 	}
-	r2tm::DoFunctionT Example::GetDoFunction() const
+	r2tm::DoFunctionT Do::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

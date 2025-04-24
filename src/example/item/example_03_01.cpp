@@ -1,4 +1,4 @@
-#include "chapter_03_01.hpp"
+#include "example_03_01.hpp"
 
 #include <cstdio>
 #include <cstdlib>
@@ -8,7 +8,7 @@
 #include "r2tm/r2tm_ostream.h"
 #include "utility4example.hpp"
 
-namespace chapter_03_01
+namespace example_03_01
 {
 	const int NOA = 10;				// 개미 개체 수
 	const int ILIMIT = 50;			// 반복 횟수
@@ -119,14 +119,14 @@ namespace chapter_03_01
 
 
 
-	r2tm::TitleFunctionT Example::GetTitleFunction() const
+	r2tm::TitleFunctionT Do::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "practice : 3 - 1";
+			return "example : 3 - 1 : Do";
 		};
 	}
-	r2tm::DoFunctionT Example::GetDoFunction() const
+	r2tm::DoFunctionT Do::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{

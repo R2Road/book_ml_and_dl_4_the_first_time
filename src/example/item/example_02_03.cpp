@@ -1,4 +1,4 @@
-#include "chapter_02_03.hpp"
+#include "example_02_03.hpp"
 
 #include <cstdio>
 #include <cstdlib>
@@ -9,7 +9,7 @@
 
 #include "utility4example.hpp"
 
-namespace chapter_02_03
+namespace example_02_03
 {
 	const int GENMAX = 1000;
 	const int NODENO = 15;
@@ -124,14 +124,14 @@ namespace chapter_02_03
 
 
 
-	r2tm::TitleFunctionT Example::GetTitleFunction() const
+	r2tm::TitleFunctionT Do::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "practice : 2 - 3";
+			return "example : 2 - 3 : Do";
 		};
 	}
-	r2tm::DoFunctionT Example::GetDoFunction() const
+	r2tm::DoFunctionT Do::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
