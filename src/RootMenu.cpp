@@ -10,6 +10,7 @@
 #include "practice/item/chapter_02_02.hpp"
 #include "practice/item/chapter_02_03.hpp"
 #include "practice/item/chapter_03_01.hpp"
+#include "practice/item/chapter_03_02.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -43,6 +44,8 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddItem( '2', chapter_02_02::Example() );
 		ret->AddItem( '3', chapter_02_03::Example() );
 		ret->AddItem( '4', chapter_03_01::Example() );
+		ret->AddItem( '5', chapter_03_02::Crossing() );
+		ret->AddItem( '6', chapter_03_02::Example() );
 
 
 
