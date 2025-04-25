@@ -11,6 +11,7 @@
 #include "example/item/example_02_03.hpp"
 #include "example/item/example_03_01.hpp"
 #include "example/item/example_03_02.hpp"
+#include "example/item/example_04_01.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -67,6 +68,13 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddItem( 's', example_03_02::Crossing() );
 		ret->AddItem( 'd', example_03_02::Do() );
+
+
+		ret->AddLineFeed();
+
+
+		ret->AddItem( 'z', example_04_01::LoadData() );
+		ret->AddItem( 'x', example_04_01::Do() );
 
 
 
