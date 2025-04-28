@@ -4,7 +4,7 @@
 
 namespace example_04_01
 {
-	class LoadData : public r2tm::iItem
+	class LoadInputData : public r2tm::iItem
 	{
 	public:
 		r2tm::TitleFunctionT GetTitleFunction() const override;

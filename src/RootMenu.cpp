@@ -74,14 +74,14 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddLineFeed();
 
 
-		ret->AddItem( 'z', example_04_01::LoadData() );
+		ret->AddItem( 'z', example_04_01::LoadInputData() );
 		ret->AddItem( 'x', example_04_01::Do() );
 
 
 		ret->AddLineFeed();
 
 
-		ret->AddItem( 'c', example_04_02::LoadData() );
+		ret->AddItem( 'c', example_04_02::LoadInputData() );
 		ret->AddItem( 'v', example_04_02::Do() );
 
 

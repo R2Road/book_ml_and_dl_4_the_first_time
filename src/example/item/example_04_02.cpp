@@ -57,7 +57,7 @@ namespace example_04_02
 	}
 
 	// 데이터 읽기
-	int getdata( double e[][INPUTNO] )
+	int load_input( double e[][INPUTNO] )
 	{
 		int n_of_e = 0; // 데이터 집합 개수
 
@@ -81,7 +81,7 @@ namespace example_04_02
 
 		return n_of_e;
 	}
-	void print_data( const int count, double e[][INPUTNO] )
+	void print_input( const int count, double e[][INPUTNO] )
 	{
 		printf( "# Data List\n" );
 		for( int i = 0; count > i; ++i )
@@ -172,14 +172,14 @@ namespace example_04_02
 
 
 
-	r2tm::TitleFunctionT LoadData::GetTitleFunction() const
+	r2tm::TitleFunctionT LoadInputData::GetTitleFunction() const
 	{
 		return []()->const char*
 		{
-			return "example : 4 - 2 : Load Data";
+			return "example : 4 - 2 : Load Input Data";
 		};
 	}
-	r2tm::DoFunctionT LoadData::GetDoFunction() const
+	r2tm::DoFunctionT LoadInputData::GetDoFunction() const
 	{
 		return []()->r2tm::eDoLeaveAction
 		{
@@ -193,12 +193,12 @@ namespace example_04_02
 
 			LF();
 
-			DECLARATION_MAIN( const int n_of_e = getdata( e ) );
+			DECLARATION_MAIN( const int n_of_e = load_input( e ) );
 			OUTPUT_VALUE( n_of_e );
 
 			LF();
 
-			PROCESS_MAIN( print_data( n_of_e, e ) );
+			PROCESS_MAIN( print_input( n_of_e, e ) );
 
 			LS();
 
@@ -243,7 +243,7 @@ namespace example_04_02
 
 			{
 				DECLARATION_MAIN( double e[MAXINPUTNO][INPUTNO] );		// 데이터 집합
-				DECLARATION_MAIN( const int n_of_e = getdata( e ) );	// 데이터 읽기
+				DECLARATION_MAIN( const int n_of_e = load_input( e ) );	// 데이터 읽기
 				OUTPUT_VALUE( n_of_e );
 
 				LF();
