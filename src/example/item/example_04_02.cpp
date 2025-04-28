@@ -32,6 +32,7 @@ namespace example_04_02
 	{
 		for( int i = 0; HIDDENNO > i; ++i )
 		{
+			printf( "    " );
 			for( int j = 0; INPUTNO + 1 > j; ++j )
 			{
 				printf( "%.2f  ", wh[i][j] );
@@ -49,6 +50,7 @@ namespace example_04_02
 	}
 	void print_wo( double wo[HIDDENNO + 1] )
 	{
+		printf( "    " );
 		for( int i = 0; HIDDENNO + 1 > i; ++i )
 		{
 			printf( "%.2f  ", wo[i] );
@@ -245,6 +247,7 @@ namespace example_04_02
 				DECLARATION_MAIN( double e[MAXINPUTNO][INPUTNO] );		// 데이터 집합
 				DECLARATION_MAIN( const int n_of_e = load_input( e ) );	// 데이터 읽기
 				OUTPUT_VALUE( n_of_e );
+				PROCESS_MAIN( print_input( n_of_e, e ) );
 
 				LF();
 
