@@ -13,6 +13,7 @@
 #include "example/item/example_03_02.hpp"
 #include "example/item/example_04_01.hpp"
 #include "example/item/example_04_02.hpp"
+#include "example/item/example_04_03.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -89,6 +90,14 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddMessage( "인공 신경망 2", r2tm::eColor::FG_Green );
 		ret->AddItem( 'c', example_04_02::LoadInputData() );
 		ret->AddItem( 'v', example_04_02::Do() );
+
+
+		ret->AddLineFeed();
+
+
+		ret->AddMessage( "인공 신경망 3 : 역전파", r2tm::eColor::FG_Green );
+		ret->AddItem( 'b', example_04_03::LoadInputData() );
+		ret->AddItem( 'n', example_04_03::Do() );
 
 
 
