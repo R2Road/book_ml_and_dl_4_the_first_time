@@ -43,61 +43,48 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
+		ret->AddMessage( "C 예제", r2tm::eColor::FG_Green );
 		ret->AddItem( '1', example_01_01::Do() );
 
-
-		ret->AddLineFeed();
-
-
 		ret->AddMessage( "귀납 학습", r2tm::eColor::FG_Green );
-		ret->AddItem( 'q', example_02_02::LoadData() );
-		ret->AddItem( 'w', example_02_02::Do() );
-
-
-		ret->AddLineFeed();
-
+		ret->AddItem( '2', example_02_02::LoadData() );
+		ret->AddItem( '3', example_02_02::Do() );
 
 		ret->AddMessage( "강화 학습", r2tm::eColor::FG_Green );
-		ret->AddItem( 'e', example_02_03::Do() );
+		ret->AddItem( '4', example_02_03::Do() );
+
 
 
 		ret->AddLineFeed();
+		ret->AddLineFeed();
+
 
 
 		ret->AddMessage( "개미 무리 최적화", r2tm::eColor::FG_Green );
-		ret->AddItem( 'a', example_03_01::Do() );
-
-
-		ret->AddLineFeed();
-
+		ret->AddItem( 'q', example_03_01::Do() );
 
 		ret->AddMessage( "진화 연산", r2tm::eColor::FG_Green );
-		ret->AddItem( 's', example_03_02::Crossing() );
-		ret->AddItem( 'd', example_03_02::Do() );
+		ret->AddItem( 'w', example_03_02::Crossing() );
+		ret->AddItem( 'e', example_03_02::Do() );
+
 
 
 		ret->AddLineFeed();
+		ret->AddLineFeed();
+
 
 
 		ret->AddMessage( "인공 신경망 1", r2tm::eColor::FG_Green );
-		ret->AddItem( 'z', example_04_01::LoadInputData() );
-		ret->AddItem( 'x', example_04_01::Do() );
-
-
-		ret->AddLineFeed();
-
+		ret->AddItem( 'a', example_04_01::LoadInputData() );
+		ret->AddItem( 's', example_04_01::Do() );
 
 		ret->AddMessage( "인공 신경망 2", r2tm::eColor::FG_Green );
-		ret->AddItem( 'c', example_04_02::LoadInputData() );
-		ret->AddItem( 'v', example_04_02::Do() );
-
-
-		ret->AddLineFeed();
-
+		ret->AddItem( 'd', example_04_02::LoadInputData() );
+		ret->AddItem( 'f', example_04_02::Do() );
 
 		ret->AddMessage( "인공 신경망 3 : 역전파", r2tm::eColor::FG_Green );
-		ret->AddItem( 'b', example_04_03::LoadInputData() );
-		ret->AddItem( 'n', example_04_03::Do() );
+		ret->AddItem( 'g', example_04_03::LoadInputData() );
+		ret->AddItem( 'h', example_04_03::Do() );
 
 
 
