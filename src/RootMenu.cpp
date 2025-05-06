@@ -14,6 +14,7 @@
 #include "example/item/example_04_01.hpp"
 #include "example/item/example_04_02.hpp"
 #include "example/item/example_04_03.hpp"
+#include "example/item/example_05_01.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -85,6 +86,17 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 		ret->AddMessage( "ÀÎ°ø ½Å°æ¸Á 3 : ¿ªÀüÆÄ", r2tm::eColor::FG_Green );
 		ret->AddItem( 'g', example_04_03::LoadInputData() );
 		ret->AddItem( 'h', example_04_03::Do() );
+
+
+
+		ret->AddLineFeed();
+		ret->AddLineFeed();
+
+
+
+		ret->AddMessage( "µö·¯´× : ÇÕ¼º°ö ¿¬»ê", r2tm::eColor::FG_Green );
+		ret->AddItem( 'z', example_05_01::LoadInputData() );
+		ret->AddItem( 'x', example_05_01::Do() );
 
 
 
