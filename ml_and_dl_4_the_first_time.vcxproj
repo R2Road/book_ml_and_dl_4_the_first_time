@@ -37,6 +37,7 @@
     <ClCompile Include="src\example\item\example_05_01.cpp" />
     <ClCompile Include="src\example\item\utility4example.cpp" />
     <ClCompile Include="src\example\MenuExample02.cpp" />
+    <ClCompile Include="src\example\MenuExample03.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
   </ItemGroup>
@@ -66,6 +67,7 @@
     <ClInclude Include="src\example\item\example_05_01.hpp" />
     <ClInclude Include="src\example\item\utility4example.hpp" />
     <ClInclude Include="src\example\MenuExample02.hpp" />
+    <ClInclude Include="src\example\MenuExample03.hpp" />
     <ClInclude Include="src\RootMenu.h" />
   </ItemGroup>
   <ItemGroup>

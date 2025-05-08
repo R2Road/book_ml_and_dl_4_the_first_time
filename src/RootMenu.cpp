@@ -7,14 +7,13 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "example/item/example_01_01.hpp"
-#include "example/item/example_03_01.hpp"
-#include "example/item/example_03_02.hpp"
 #include "example/item/example_04_01.hpp"
 #include "example/item/example_04_02.hpp"
 #include "example/item/example_04_03.hpp"
 #include "example/item/example_05_01.hpp"
 
 #include "example/MenuExample02.hpp"
+#include "example/MenuExample03.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -54,26 +53,11 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddMenu( '2', MenuExample02() );
 
-
-
-		ret->AddLineFeed();
 		ret->AddLineFeed();
 
-
-
-		ret->AddMessage( "개미 무리 최적화", r2tm::eColor::FG_Green );
-		ret->AddItem( 'q', example_03_01::Do() );
-
-		ret->AddMessage( "진화 연산", r2tm::eColor::FG_Green );
-		ret->AddItem( 'w', example_03_02::Crossing() );
-		ret->AddItem( 'e', example_03_02::Do() );
-
-
+		ret->AddMenu( '3', MenuExample03() );
 
 		ret->AddLineFeed();
-		ret->AddLineFeed();
-
-
 
 		ret->AddMessage( "인공 신경망 1", r2tm::eColor::FG_Green );
 		ret->AddItem( 'a', example_04_01::LoadInputData() );
