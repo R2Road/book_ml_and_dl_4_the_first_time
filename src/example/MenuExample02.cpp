@@ -12,7 +12,7 @@ r2tm::TitleFunctionT MenuExample02::GetTitleFunction() const
 {
 	return []()->const char*
 	{
-		return "귀납 학습, 강화 학습";
+		return "chapter 2 머신러닝의 기초 : 귀납 학습, 강화 학습";
 	};
 }
 
