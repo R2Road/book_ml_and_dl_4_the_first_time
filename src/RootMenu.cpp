@@ -6,10 +6,9 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "example/item/example_01_01.hpp"
-
 #include "example/item/example_05_01.hpp"
 
+#include "example/MenuExample01.hpp"
 #include "example/MenuExample02.hpp"
 #include "example/MenuExample03.hpp"
 #include "example/MenuExample04.hpp"
@@ -42,13 +41,9 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 {
 	return []( r2tm::MenuProcessor* ret )
 	{
-		ret->AddMessage( "C ¿¹Á¦", r2tm::eColor::FG_Green );
-		ret->AddItem( '1', example_01_01::Do() );
-
+		ret->AddMenu( '1', MenuExample01() );
 
 		ret->AddLineFeed();
-		ret->AddLineFeed();
-
 
 		ret->AddMenu( '2', MenuExample02() );
 
