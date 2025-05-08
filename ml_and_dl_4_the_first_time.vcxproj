@@ -40,6 +40,7 @@
     <ClCompile Include="src\example\MenuExample02.cpp" />
     <ClCompile Include="src\example\MenuExample03.cpp" />
     <ClCompile Include="src\example\MenuExample04.cpp" />
+    <ClCompile Include="src\example\MenuExample05.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\RootMenu.cpp" />
   </ItemGroup>
@@ -72,6 +73,7 @@
     <ClInclude Include="src\example\MenuExample02.hpp" />
     <ClInclude Include="src\example\MenuExample03.hpp" />
     <ClInclude Include="src\example\MenuExample04.hpp" />
+    <ClInclude Include="src\example\MenuExample05.hpp" />
     <ClInclude Include="src\RootMenu.h" />
   </ItemGroup>
   <ItemGroup>

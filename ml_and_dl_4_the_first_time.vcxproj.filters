@@ -66,6 +66,9 @@
     <ClCompile Include="src\example\MenuExample01.cpp">
       <Filter>example</Filter>
     </ClCompile>
+    <ClCompile Include="src\example\MenuExample05.cpp">
+      <Filter>example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -151,6 +154,9 @@
       <Filter>example</Filter>
     </ClInclude>
     <ClInclude Include="src\example\MenuExample01.hpp">
+      <Filter>example</Filter>
+    </ClInclude>
+    <ClInclude Include="src\example\MenuExample05.hpp">
       <Filter>example</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,12 +6,11 @@
 #include "r2tm/r2tm_ostream.h"
 #include "r2tm/r2tm_VersionInfo.h"
 
-#include "example/item/example_05_01.hpp"
-
 #include "example/MenuExample01.hpp"
 #include "example/MenuExample02.hpp"
 #include "example/MenuExample03.hpp"
 #include "example/MenuExample04.hpp"
+#include "example/MenuExample05.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -57,12 +56,7 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddLineFeed();
 
-
-		ret->AddMessage( "µö·¯´× : ÇÕ¼º°ö ¿¬»ê", r2tm::eColor::FG_Green );
-		ret->AddItem( 'z', example_05_01::LoadInputData() );
-		ret->AddItem( 'x', example_05_01::Do() );
-
-
+		ret->AddMenu( '5', MenuExample05() );
 
 		ret->AddSplit();
 
