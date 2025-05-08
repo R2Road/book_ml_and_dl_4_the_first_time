@@ -7,13 +7,12 @@
 #include "r2tm/r2tm_VersionInfo.h"
 
 #include "example/item/example_01_01.hpp"
-#include "example/item/example_04_01.hpp"
-#include "example/item/example_04_02.hpp"
-#include "example/item/example_04_03.hpp"
+
 #include "example/item/example_05_01.hpp"
 
 #include "example/MenuExample02.hpp"
 #include "example/MenuExample03.hpp"
+#include "example/MenuExample04.hpp"
 
 r2tm::TitleFunctionT RootMenu::GetTitleFunction() const
 {
@@ -59,23 +58,9 @@ r2tm::WriteFunctionT RootMenu::GetWriteFunction() const
 
 		ret->AddLineFeed();
 
-		ret->AddMessage( "ÀÎ°ø ½Å°æ¸Á 1", r2tm::eColor::FG_Green );
-		ret->AddItem( 'a', example_04_01::LoadInputData() );
-		ret->AddItem( 's', example_04_01::Do() );
-
-		ret->AddMessage( "ÀÎ°ø ½Å°æ¸Á 2", r2tm::eColor::FG_Green );
-		ret->AddItem( 'd', example_04_02::LoadInputData() );
-		ret->AddItem( 'f', example_04_02::Do() );
-
-		ret->AddMessage( "ÀÎ°ø ½Å°æ¸Á 3 : ¿ªÀüÆÄ", r2tm::eColor::FG_Green );
-		ret->AddItem( 'g', example_04_03::LoadInputData() );
-		ret->AddItem( 'h', example_04_03::Do() );
-
-
+		ret->AddMenu( '4', MenuExample04() );
 
 		ret->AddLineFeed();
-		ret->AddLineFeed();
-
 
 
 		ret->AddMessage( "µö·¯´× : ÇÕ¼º°ö ¿¬»ê", r2tm::eColor::FG_Green );
