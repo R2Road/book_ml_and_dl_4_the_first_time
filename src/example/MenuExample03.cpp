@@ -12,7 +12,7 @@ r2tm::TitleFunctionT MenuExample03::GetTitleFunction() const
 {
 	return []()->const char*
 	{
-		return "개미 무리 최적화, 진화 연산";
+		return "chapter 3 군집지능과 진화연산 : 개미 무리 최적화, 진화 연산";
 	};
 }
 
