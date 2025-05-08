@@ -54,6 +54,9 @@
     <ClCompile Include="src\example\item\example_05_01.cpp">
       <Filter>example\item</Filter>
     </ClCompile>
+    <ClCompile Include="src\example\MenuExample02.cpp">
+      <Filter>example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\RootMenu.h" />
@@ -129,6 +132,9 @@
     <ClInclude Include="src\example\item\example_05_01.hpp">
       <Filter>example\item</Filter>
     </ClInclude>
+    <ClInclude Include="src\example\MenuExample02.hpp">
+      <Filter>example</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="external">
@@ -145,9 +151,6 @@
     </Filter>
     <Filter Include="example\item">
       <UniqueIdentifier>{675da4f1-e1bb-45c2-8fe0-f87c4dd402d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="example\menu">
-      <UniqueIdentifier>{923382b1-5880-48ea-bc82-680641c53698}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
